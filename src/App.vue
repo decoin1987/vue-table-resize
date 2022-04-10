@@ -3,54 +3,22 @@
     <table v-resizable>
       <thead>
         <tr>
-          <th>123</th>
-          <th>123</th>
-          <th>123</th>
-          <th>123</th>
-          <th>123</th>
-          <th>123</th>
+          <th>First</th>
+          <th>Second</th>
+          <th>Third</th>
+          <th>Fourth</th>
+          <th>Fifth</th>
+          <th>Sixth</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-        </tr>
-        <tr>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-        </tr>
-        <tr>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-        </tr>
-        <tr>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-        </tr>
-        <tr>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
-          <td>123</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
         </tr>
       </tbody>
     </table>

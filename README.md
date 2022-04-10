@@ -1,4 +1,5 @@
 # vue-resize-table
+![img.png](img.png)
 
 ## Project setup
 ```
@@ -14,6 +15,8 @@ npm run serve
 ####### main.js
 ```
 import vueTableResize from "@/plugin/vue-table-resize/vue-table-resize";
+
+// Если нужны стили
 import "@/plugin/vue-table-resize/style/main.scss";
 
 Vue.use(vueTableResize);
