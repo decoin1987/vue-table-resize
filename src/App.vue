@@ -1,28 +1,77 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <table v-resizable>
+      <thead>
+        <tr>
+          <th>123</th>
+          <th>123</th>
+          <th>123</th>
+          <th>123</th>
+          <th>123</th>
+          <th>123</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  components: {},
+  methods: {
+    alarm(el) {
+      console.dir(el);
+    },
   },
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
 }
 </style>

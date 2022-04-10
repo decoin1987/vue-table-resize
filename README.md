@@ -10,15 +10,68 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Импорт и Настройка
+####### main.js
 ```
-npm run build
+import vueTableResize from "@/plugin/vue-table-resize/vue-table-resize";
+import "@/plugin/vue-table-resize/style/main.scss";
+
+Vue.use(vueTableResize);
 ```
 
-### Lints and fixes files
+### Настраиваемые параметры таблицы
 ```
-npm run lint
+<table
+    v-resizable
+    tableClass: "table__resize-table", // Класс таблицы
+    gripClass: "table__resize-grip", // Класс хэндлера
+    gripActiveClass: "table__resize-grip--active", // Активный класс хэндлера
+    tableId: null, // id таблицы
+    emit: null, // имя события, возвращает DOM.element колонки размер которой изменяется
+    ...
+></table>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### HTML
+```
+<table v-resizable>
+    <thead>
+        <tr>
+          <th>...</th>
+          <th>...</th>
+          <th>...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+</table v-resizable>
+```
+
+### CSS 
+```
+.table__resize-table {
+  .....
+  }
+
+  th {
+    ...
+  }
+}
+
+.table__resize-grip {
+  ...
+
+  &:hover {
+    ...
+  }
+}
+
+.table__resize-grip--active {
+  ...
+}
+```
