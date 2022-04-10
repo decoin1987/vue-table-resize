@@ -31,7 +31,7 @@ export default {
             }
           });
           grip.addEventListener("dblclick", () => {
-            th.style.width = "auto";
+            th.style.width = "";
           });
           th.appendChild(grip);
         });

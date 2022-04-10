@@ -20,19 +20,39 @@ import "@/plugin/vue-table-resize/style/main.scss";
 Vue.use(vueTableResize);
 ```
 
-### Настраиваемые параметры таблицы
-Атрибуты `<table></table>`
+### Настраиваемые параметры директивы
+
 ```
 <table
     v-resizable
-    tableClass: "table__resize-table", // Класс таблицы
-    gripClass: "table__resize-grip", // Класс хэндлера
-    gripActiveClass: "table__resize-grip--active", // Активный класс хэндлера
-    tableId: null, // id таблицы
-    emit: null, // имя события, возвращает DOM.element колонки размер которой изменяется
+    tableClass="table__resize-table"
+    gripClass="table__resize-grip"
+    gripActiveClass="table__resize-grip--active"
+    tableId=null
+    emit="onAfterResize"
     ...
+    @onAfterResize="..."
 ></table>
 ```
+
+
+PROPS
+
+| props           | type         | default                        | description                                                           |
+|-----------------|--------------|--------------------------------|-----------------------------------------------------------------------|
+| tableClass      | String       | `"table__resize-table"`        | Класс таблицы                                                         |
+| gripClass       | String       | `"table__resize-grip"`         | Класс хэндлера                                                        |
+| gripActiveClass | String       | `"table__resize-grip--active"` | Активный класс хэндлера                                               |
+| tableId         | Boolean      | `null`                         | id таблицы                                                            |
+| emit            | String, null | `null`                         | Имя события. возвращает DOM.element колонки размер которой изменяется |
+
+EVENTS
+
+| event           | emit         |  description                              |
+|-----------------|--------------|-------------------------------------------|
+| dblclick        | Void         | Сбрасывает ширину элемента                |
+| mouseup         | Object       | Возвращает DOM.element изменяемой колонки |
+
 
 ### HTML
 ```
@@ -82,3 +102,7 @@ Vue.use(vueTableResize);
   ...
 }
 ```
+
+### EMIT
+
+
