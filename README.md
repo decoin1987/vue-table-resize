@@ -15,14 +15,13 @@ npm run serve
 ####### main.js
 ```
 import vueTableResize from "@/plugin/vue-table-resize/vue-table-resize";
-
-// Если нужны стили
 import "@/plugin/vue-table-resize/style/main.scss";
 
 Vue.use(vueTableResize);
 ```
 
 ### Настраиваемые параметры таблицы
+Атрибуты `<table></table>`
 ```
 <table
     v-resizable
@@ -37,7 +36,7 @@ Vue.use(vueTableResize);
 
 ### HTML
 ```
-<table v-resizable>
+<table v-resizable ...>
     <thead>
         <tr>
           <th>...</th>
@@ -52,10 +51,15 @@ Vue.use(vueTableResize);
           <td>...</td>
         </tr>
       </tbody>
-</table v-resizable>
+</table>
 ```
 
 ### CSS 
+
+Можно импортировать свою таблицу стилей, ниже используемые по умолчанию стили.
+
+Изменить стили по умолчанию можно передав нужное название стиля в атрибуты `<table></table>`
+
 ```
 .table__resize-table {
   .....
