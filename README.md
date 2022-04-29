@@ -43,7 +43,7 @@ PROPS
 | tableClass      | String       | `"table__resize-table"`        | Класс таблицы                                                         |
 | gripClass       | String       | `"table__resize-grip"`         | Класс хэндлера                                                        |
 | gripActiveClass | String       | `"table__resize-grip--active"` | Активный класс хэндлера                                               |
-| tableId         | Boolean      | `null`                         | id таблицы                                                            |
+| tableId         | Number       | `null`                         | id таблицы                                                            |
 | emit            | String, null | `null`                         | Имя события. возвращает DOM.element колонки размер которой изменяется |
 
 EVENTS
